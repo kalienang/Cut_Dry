@@ -2,17 +2,26 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
       xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link href='http://fonts.googleapis.com/css?family=News+Cycle|Josefin+Sans|Asul|Belleza' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" />
     <meta charset="utf-8">
     <script src='script.js'></script>
-    <link href='http://fonts.googleapis.com/css?family=News+Cycle|Josefin+Sans|Asul|Belleza' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <title>Home</title>
+    <script type="text/javascript">
+        var image1=new Image();
+            image1.src="photos/home/home4.jpg";
+        var image2=new Image();
+            image2.src="photos/home/home3.jpg";
+        var image3=new Image();
+            image3.src="photos/home/home2.jpg";
+    </script>
     <div id="title">
         <p class="title">Cut & Dry Total Haircare</p>
     </div>
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default row" role="navigation">
         <div class="navbar-header">
             <div class="container">
                 <ul class="nav navbar-nav">
@@ -39,16 +48,39 @@
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <div class="body">
-        </br>
-        <div class="homeimage">
-            <img class="homeimg" src="photos/home_img.JPG" alt="Home Image" height="400px" width="500px">
-        </div>
-        <div class="hometext">
-            <p><span class="name">Sheri Becker</span></br>Owner/Operator</p>
-            <p class="address">1021 Township Avenue</br>Wisconsin Rapids, WI 54494</p>
-            <p class="hours">Open 9am-5pm</br>Monday-Friday</p>
+        <div class="home row">
+        <div class="hometext large-4 columns">
+            <p><span class="name">Sheri Becker</span><br>Owner/Operator</p>
+            <p class="address">1021 Township Avenue<br>Wisconsin Rapids, WI 54494</p>
+            <p class="hours">Monday-Friday: 9am-5pm </p>
             <p class="hours">Wednesdays open until 7pm</p>
-            <p>Extended hours available upon request</p>
+            <p class="extended">Extended hours available upon request</p>
+        </div>
+        <div class="home_slideshow large-8 columns">
+            <img src="photos/home/home1.jpg" name="slide" width=958px height=401px>
+            <script type="text/javascript">
+                <!--
+                //variable that will increment through the images
+                var step=1
+                function slideit(){
+//if browser does not support the image object, exit.
+                    if (!document.images)
+                        return
+                    document.images.slide.src=eval("image"+step+".src")
+                    if (step<3)
+                        step++
+                    else
+                        step=1
+//call function "slideit()" every 2.5 seconds
+                    setTimeout("slideit()",4000)
+                }
+                slideit()
+                //-->
+            </script>
+        </div>
+        <!--<div class="homeimage">
+            <img class="homeimg" src="photos/home_img.JPG" alt="Home Image" height="400px" width="500px">
+        </div>-->
         </div>
     </div>
 </body>
