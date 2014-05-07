@@ -81,12 +81,13 @@ body {
 .hometext {
     width: 300px;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
     font-family: 'Lato', sans-serif;
     text-align: left;
     font-size: 16px;
     border-left: solid #000000 2px;
-    padding-left: 20px;
+    padding-left: 10px;
     height: 278px;
 }
 
@@ -125,32 +126,28 @@ body {
 }
 .banner img {
     border: solid black 2px;
-    margin-top: 20px;
     width: 1000px;
 }
 
 .product-description {
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
 .color-description {
     padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
-.socolor {
-    float: left;
+.socolor img {
     border: solid black 2px;
 }
 
-.colorsync {
-    float: right;
+.colorsync img {
     border: solid black 2px;
 }
 
@@ -174,6 +171,11 @@ body {
     width: 500px;
     float: left;
     padding-left: 10px;
+}
+
+.services td {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
 }
 
 table {
@@ -212,12 +214,13 @@ li.active {
     width: 480px;
     float: left;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 18px;
     border-left: 2px solid black;
     padding-left: 20px;
+    line-height: 1.4;
 }
 
 .aboutimg img {
@@ -225,7 +228,7 @@ li.active {
     float: right;
     border: solid black 2px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .serviceimg {
@@ -248,7 +251,7 @@ li.active {
     float: right;
     width: 450px;
     margin-right: 25px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .map img {
@@ -267,7 +270,7 @@ li.active {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-left: 2px solid black;
 }
 
@@ -309,6 +312,7 @@ li.active {
     padding-left: 20px;
     width: 300px;
     margin-left: 20px;
+    margin-top: 20px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -326,6 +330,7 @@ li.active {
     width: 480px;
     float: right;
     padding-right: 10px;
+    margin-top: 20px;
 }
 
 a:hover, a:focus {
@@ -343,10 +348,10 @@ a {
     text-decoration: underline;
 }
 
-.home_slideshow {
-    float: right;
-}
-
 .home {
     padding-top: 20px;
+}
+
+.home_slideshow {
+    margin-top: 20px;
 }
