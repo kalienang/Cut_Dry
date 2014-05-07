@@ -244,32 +244,43 @@ li.active {
     width: 240px;
 }
 
-.locationimg {
-    border: solid black 2px;
-    float: left;
-    width: 450px;
-    margin-left: 25px;
-}
-
 .map {
     float: right;
-    border: solid black 2px;
     width: 450px;
     margin-right: 25px;
+    margin-top: 20px;
+}
 
+.map img {
+    border: 2px solid black;
 }
 
 .navbar-default .navbar-nav>.dropdown>a .caret {
     border-top: solid white;
 }
 
-#address {
+.loc_address {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     color: black;
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-left: 2px solid black;
+}
+
+.loc_address a {
+    font-family: 'lato', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.loc_address p {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    
 }
 
 .dropdown-menu>li>a {
